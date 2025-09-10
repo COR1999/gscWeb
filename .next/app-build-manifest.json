@@ -11,40 +11,30 @@
       "static/chunks/main-app.js",
       "static/chunks/app/page.js"
     ],
-    "/membership/page": [
+    "/club-info/history/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/membership/page.js"
+      "static/chunks/app/club-info/history/page.js"
     ],
-    "/history/page": [
+    "/sailing/live-feeds/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/history/page.js"
+      "static/chunks/app/sailing/live-feeds/page.js"
     ],
-    "/results/page": [
+    "/calendar/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/results/page.js"
+      "static/chunks/app/calendar/page.js"
     ],
-    "/constitution/page": [
+    "/sailing/sailing-calendar-sis/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/constitution/page.js"
+      "static/chunks/app/sailing/sailing-calendar-sis/page.js"
     ],
-    "/policies-procedures/page": [
+    "/_not-found/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/policies-procedures/page.js"
-    ],
-    "/club-officers/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/club-officers/page.js"
-    ],
-    "/club-commodores/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/club-commodores/page.js"
+      "static/chunks/app/_not-found/page.js"
     ]
   }
 }

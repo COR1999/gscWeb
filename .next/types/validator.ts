@@ -42,46 +42,40 @@ type LayoutConfig<Route extends LayoutRoutes = LayoutRoutes> = {
   handler satisfies AppPageConfig<"/calendar">
 }
 
-// Validate ../../app/club-commodores/page.tsx
+// Validate ../../app/club-info/club-commodores/page.tsx
 {
-  const handler = {} as typeof import("../../app/club-commodores/page.js")
-  handler satisfies AppPageConfig<"/club-commodores">
+  const handler = {} as typeof import("../../app/club-info/club-commodores/page.js")
+  handler satisfies AppPageConfig<"/club-info/club-commodores">
 }
 
-// Validate ../../app/club-officers/page.tsx
+// Validate ../../app/club-info/club-officers/page.tsx
 {
-  const handler = {} as typeof import("../../app/club-officers/page.js")
-  handler satisfies AppPageConfig<"/club-officers">
+  const handler = {} as typeof import("../../app/club-info/club-officers/page.js")
+  handler satisfies AppPageConfig<"/club-info/club-officers">
 }
 
-// Validate ../../app/constitution/page.tsx
+// Validate ../../app/club-info/constitution/page.tsx
 {
-  const handler = {} as typeof import("../../app/constitution/page.js")
-  handler satisfies AppPageConfig<"/constitution">
+  const handler = {} as typeof import("../../app/club-info/constitution/page.js")
+  handler satisfies AppPageConfig<"/club-info/constitution">
 }
 
-// Validate ../../app/history/page.tsx
+// Validate ../../app/club-info/history/page.tsx
 {
-  const handler = {} as typeof import("../../app/history/page.js")
-  handler satisfies AppPageConfig<"/history">
+  const handler = {} as typeof import("../../app/club-info/history/page.js")
+  handler satisfies AppPageConfig<"/club-info/history">
 }
 
-// Validate ../../app/junior-sailing/page.tsx
+// Validate ../../app/club-info/membership/page.tsx
 {
-  const handler = {} as typeof import("../../app/junior-sailing/page.js")
-  handler satisfies AppPageConfig<"/junior-sailing">
+  const handler = {} as typeof import("../../app/club-info/membership/page.js")
+  handler satisfies AppPageConfig<"/club-info/membership">
 }
 
-// Validate ../../app/live-feeds/page.tsx
+// Validate ../../app/club-info/policies-procedures/page.tsx
 {
-  const handler = {} as typeof import("../../app/live-feeds/page.js")
-  handler satisfies AppPageConfig<"/live-feeds">
-}
-
-// Validate ../../app/membership/page.tsx
-{
-  const handler = {} as typeof import("../../app/membership/page.js")
-  handler satisfies AppPageConfig<"/membership">
+  const handler = {} as typeof import("../../app/club-info/policies-procedures/page.js")
+  handler satisfies AppPageConfig<"/club-info/policies-procedures">
 }
 
 // Validate ../../app/page.tsx
@@ -90,22 +84,28 @@ type LayoutConfig<Route extends LayoutRoutes = LayoutRoutes> = {
   handler satisfies AppPageConfig<"/">
 }
 
-// Validate ../../app/policies-procedures/page.tsx
+// Validate ../../app/sailing/junior-sailing/page.tsx
 {
-  const handler = {} as typeof import("../../app/policies-procedures/page.js")
-  handler satisfies AppPageConfig<"/policies-procedures">
+  const handler = {} as typeof import("../../app/sailing/junior-sailing/page.js")
+  handler satisfies AppPageConfig<"/sailing/junior-sailing">
 }
 
-// Validate ../../app/results/page.tsx
+// Validate ../../app/sailing/live-feeds/page.tsx
 {
-  const handler = {} as typeof import("../../app/results/page.js")
-  handler satisfies AppPageConfig<"/results">
+  const handler = {} as typeof import("../../app/sailing/live-feeds/page.js")
+  handler satisfies AppPageConfig<"/sailing/live-feeds">
 }
 
-// Validate ../../app/sailing-calendar-sis/page.tsx
+// Validate ../../app/sailing/results/page.tsx
 {
-  const handler = {} as typeof import("../../app/sailing-calendar-sis/page.js")
-  handler satisfies AppPageConfig<"/sailing-calendar-sis">
+  const handler = {} as typeof import("../../app/sailing/results/page.js")
+  handler satisfies AppPageConfig<"/sailing/results">
+}
+
+// Validate ../../app/sailing/sailing-calendar-sis/page.tsx
+{
+  const handler = {} as typeof import("../../app/sailing/sailing-calendar-sis/page.js")
+  handler satisfies AppPageConfig<"/sailing/sailing-calendar-sis">
 }
 
 // Validate ../../app/training/page.tsx

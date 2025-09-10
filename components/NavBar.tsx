@@ -13,12 +13,12 @@ const NavBar = () => {
       label: 'Club Info',
       href: '/club-info',
       dropdown: [
-        { href: '/membership', label: 'Membership' },
-        { href: '/constitution', label: 'Constitution' },
-        { href: '/history', label: 'History' },
-        { href: '/policies-procedures', label: 'Policies and Procedures' },
-        { href: '/club-officers', label: 'Club Officers' },
-        { href: '/club-commodores', label: 'Club Commodores' },
+        { href: '/club-info/membership', label: 'Membership' },
+        { href: '/club-info/constitution', label: 'Constitution' },
+        { href: '/club-info/history', label: 'History' },
+        { href: '/club-info/policies-procedures', label: 'Policies and Procedures' },
+        { href: '/club-info/club-officers', label: 'Club Officers' },
+        { href: '/club-info/club-commodores', label: 'Club Commodores' },
       ]
     },
     {
@@ -26,10 +26,10 @@ const NavBar = () => {
       href: '/sailing',
       dropdown: [
         { href: 'https://dutyman.biz/dmmain.aspx?id=G0001650', label: 'Duty Roster', external: true },
-        { href: '/results', label: 'Results' },
-        { href: '/sailing-calendar-sis', label: 'Sailing Calendar & SI\'s' },
-        { href: '/live-feeds', label: 'Live Feeds' },
-        { href: '/junior-sailing', label: 'Junior Sailing' },
+        { href: '/sailing/results', label: 'Results' },
+        { href: '/sailing/sailing-calendar-sis', label: 'Sailing Calendar & SI\'s' },
+        { href: '/sailing/live-feeds', label: 'Live Feeds' },
+        { href: '/sailing/junior-sailing', label: 'Junior Sailing' },
       ]
     },
     { href: '/training', label: 'Training' },
