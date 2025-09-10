@@ -36,10 +36,82 @@ type LayoutConfig<Route extends LayoutRoutes = LayoutRoutes> = {
 }
 
 
+// Validate ../../app/calendar/page.tsx
+{
+  const handler = {} as typeof import("../../app/calendar/page.js")
+  handler satisfies AppPageConfig<"/calendar">
+}
+
+// Validate ../../app/club-commodores/page.tsx
+{
+  const handler = {} as typeof import("../../app/club-commodores/page.js")
+  handler satisfies AppPageConfig<"/club-commodores">
+}
+
+// Validate ../../app/club-officers/page.tsx
+{
+  const handler = {} as typeof import("../../app/club-officers/page.js")
+  handler satisfies AppPageConfig<"/club-officers">
+}
+
+// Validate ../../app/constitution/page.tsx
+{
+  const handler = {} as typeof import("../../app/constitution/page.js")
+  handler satisfies AppPageConfig<"/constitution">
+}
+
+// Validate ../../app/history/page.tsx
+{
+  const handler = {} as typeof import("../../app/history/page.js")
+  handler satisfies AppPageConfig<"/history">
+}
+
+// Validate ../../app/junior-sailing/page.tsx
+{
+  const handler = {} as typeof import("../../app/junior-sailing/page.js")
+  handler satisfies AppPageConfig<"/junior-sailing">
+}
+
+// Validate ../../app/live-feeds/page.tsx
+{
+  const handler = {} as typeof import("../../app/live-feeds/page.js")
+  handler satisfies AppPageConfig<"/live-feeds">
+}
+
+// Validate ../../app/membership/page.tsx
+{
+  const handler = {} as typeof import("../../app/membership/page.js")
+  handler satisfies AppPageConfig<"/membership">
+}
+
 // Validate ../../app/page.tsx
 {
   const handler = {} as typeof import("../../app/page.js")
   handler satisfies AppPageConfig<"/">
+}
+
+// Validate ../../app/policies-procedures/page.tsx
+{
+  const handler = {} as typeof import("../../app/policies-procedures/page.js")
+  handler satisfies AppPageConfig<"/policies-procedures">
+}
+
+// Validate ../../app/results/page.tsx
+{
+  const handler = {} as typeof import("../../app/results/page.js")
+  handler satisfies AppPageConfig<"/results">
+}
+
+// Validate ../../app/sailing-calendar-sis/page.tsx
+{
+  const handler = {} as typeof import("../../app/sailing-calendar-sis/page.js")
+  handler satisfies AppPageConfig<"/sailing-calendar-sis">
+}
+
+// Validate ../../app/training/page.tsx
+{
+  const handler = {} as typeof import("../../app/training/page.js")
+  handler satisfies AppPageConfig<"/training">
 }
 
 
