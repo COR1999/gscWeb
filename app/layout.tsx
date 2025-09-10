@@ -12,6 +12,9 @@ export const metadata = {
     ],
     apple: "/apple-touch-icon.png",
   },
+};
+
+export const viewport = {
   themeColor: "#2563eb",
 };
 
