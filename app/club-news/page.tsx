@@ -224,7 +224,7 @@ export default async function ClubNewsPage() {
           <div className="bg-gradient-to-r from-blue-600 to-blue-800 text-white rounded-lg p-8 text-center">
             <h3 className="text-2xl font-bold mb-4">Stay Connected</h3>
             <p className="text-blue-100 mb-6 max-w-2xl mx-auto">
-              Don't miss out on club announcements, race results, and member news. 
+              Don&apos;t miss out on club announcements, race results, and member news. 
               Follow us on social media or visit regularly for the latest updates.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

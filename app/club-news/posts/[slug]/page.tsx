@@ -135,7 +135,7 @@ export default async function PostPage({ params }: PageProps) {
       <PageLayout title="Post Not Found" description="The requested post could not be found.">
         <div className="text-center py-16">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">Post Not Found</h1>
-          <p className="text-xl text-gray-600 mb-8">The post you're looking for doesn't exist or has been moved.</p>
+          <p className="text-xl text-gray-600 mb-8">The post you&apos;re looking for doesn&apos;t exist or has been moved.</p>
           <Link 
             href="/club-news" 
             className="inline-flex items-center px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors"
