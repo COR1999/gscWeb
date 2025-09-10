@@ -7,12 +7,6 @@ const ConstitutionPage = () => {
       description="The governing constitution and rules of Greystones Sailing Club"
     >
       <div className="prose prose-lg max-w-none">
-        <div className="bg-blue-50 rounded-lg p-6 mb-8">
-          <p className="text-gray-700">
-            The Constitution of Greystones Sailing Club sets out the fundamental rules and 
-            governance structure that guide our club operations, membership, and activities.
-          </p>
-        </div>
         
         <div className="bg-white rounded-lg shadow-md p-6 mb-8">
           <h2 className="text-2xl font-bold text-blue-900 mb-4">Constitution Document</h2>

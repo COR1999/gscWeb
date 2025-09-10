@@ -7,7 +7,7 @@ const HistoryPage = () => {
       description="Discover the rich history of Greystones Sailing Club since 1968"
     >
       <div className="prose prose-lg max-w-none">
-        <div className="bg-blue-50 rounded-lg p-6 mb-8">
+        <div className="bg-white rounded-lg shadow-md p-6 mb-8">
           <h2 className="text-2xl font-bold text-blue-900 mb-4">The Beginning - 1968</h2>
           <p className="text-gray-700 mb-4">
             Greystones Sailing Club was established in 1968 by five visionary founders: 

@@ -21,6 +21,7 @@ const NavBar = () => {
         { href: '/club-info/club-commodores', label: 'Club Commodores' },
       ]
     },
+    { href: '/club-news', label: 'Club News' },
     {
       label: 'Sailing',
       href: '/sailing',

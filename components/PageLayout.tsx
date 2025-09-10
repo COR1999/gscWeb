@@ -26,32 +26,36 @@ const PageLayout = ({ children, title, description, showHero = false, maxWidth =
       <NavBar />
       
       {showHero && (
-        <div className="bg-gradient-to-br from-blue-50 to-blue-100 pt-16">
-          <div className={`${containerClass} mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center`}>
-            <h1 className="text-4xl md:text-5xl font-bold text-blue-900 mb-4">
-              {title}
-            </h1>
-            {description && (
-              <p className="text-xl text-gray-700 max-w-2xl mx-auto">
-                {description}
-              </p>
-            )}
+        <div className="pt-10">
+          <div className={`${containerClass} mx-auto px-4 sm:px-6 lg:px-8 py-4`}>
+            <div className="bg-blue-50 rounded-lg p-4 text-center">
+              <h1 className="text-4xl md:text-5xl font-bold text-blue-900 mb-4">
+                {title}
+              </h1>
+              {description && (
+                <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+                  {description}
+                </p>
+              )}
+            </div>
           </div>
         </div>
       )}
       
       <main className={`flex-grow ${showHero ? '' : 'pt-16'}`}>
         {!showHero && (
-          <div className="bg-gray-50 py-12">
-            <div className={`${containerClass} mx-auto px-4 sm:px-6 lg:px-8`}>
-              <h1 className="text-4xl font-bold text-blue-900 mb-4">
-                {title}
-              </h1>
-              {description && (
-                <p className="text-xl text-gray-700">
-                  {description}
-                </p>
-              )}
+          <div className="pt-10">
+            <div className={`${containerClass} mx-auto px-4 sm:px-6 lg:px-8 py-4`}>
+              <div className="bg-blue-50 rounded-lg p-4 text-center">
+                <h1 className="text-4xl md:text-5xl font-bold text-blue-900 mb-4">
+                  {title}
+                </h1>
+                {description && (
+                  <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+                    {description}
+                  </p>
+                )}
+              </div>
             </div>
           </div>
         )}

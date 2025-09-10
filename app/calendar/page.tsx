@@ -7,10 +7,6 @@ const CalendarPage = () => {
       description="Upcoming events, races, and activities at Greystones Sailing Club"
     >
       <div className="prose prose-lg max-w-none">
-        <div className="bg-blue-50 rounded-lg p-6 mb-8">
-          <h2 className="text-2xl font-bold text-blue-900 mb-4">Upcoming Events</h2>
-          <p className="text-gray-700">Stay up to date with all club activities, racing events, and social functions.</p>
-        </div>
         
         <div className="bg-white rounded-lg shadow-md p-6 mb-8">
           <h3 className="text-xl font-bold text-blue-900 mb-4">Recurring Events</h3>

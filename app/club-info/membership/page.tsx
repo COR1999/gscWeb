@@ -7,7 +7,7 @@ const MembershipPage = () => {
       description="Join Greystones Sailing Club - Open to sailors of all skill levels, ages, and interests"
     >
       <div className="prose prose-lg max-w-none">
-        <div className="bg-blue-50 rounded-lg p-6 mb-8">
+        <div className="bg-white rounded-lg shadow-md p-6 mb-8">
           <h2 className="text-2xl font-bold text-blue-900 mb-4">Membership Information</h2>
           <p className="text-gray-700 mb-4">
             Greystones Sailing Club is open to sailors of all skill levels, ages, and interests. 

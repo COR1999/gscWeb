@@ -7,10 +7,6 @@ const TrainingPage = () => {
       description="Sailing courses and instruction for all levels at Greystones Sailing Club"
     >
       <div className="prose prose-lg max-w-none">
-        <div className="bg-blue-50 rounded-lg p-6 mb-8">
-          <h2 className="text-2xl font-bold text-blue-900 mb-4">Training Programs</h2>
-          <p className="text-gray-700">From complete beginners to advanced racers, our certified instructors provide comprehensive sailing education.</p>
-        </div>
         
         <div className="grid md:grid-cols-2 gap-6 mb-8">
           <div className="bg-white rounded-lg shadow-md p-6">
