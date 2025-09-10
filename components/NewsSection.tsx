@@ -56,11 +56,6 @@ const NewsSection = async () => {
           )}
         </div>
         
-        <div className="text-center mt-12">
-          <button className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-50 transition-colors duration-200 shadow-lg border-2 border-blue-600">
-            View All News
-          </button>
-        </div>
       </div>
     </section>
   );

@@ -59,9 +59,6 @@ const Overview = () => {
             Whether you&apos;re a complete beginner or an experienced sailor, 
             Greystones Sailing Club offers the perfect environment to enjoy the sport you love.
           </p>
-          <button className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-200 shadow-lg">
-            Become a Member Today
-          </button>
         </div>
       </div>
     </section>
