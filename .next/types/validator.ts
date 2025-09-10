@@ -78,6 +78,18 @@ type LayoutConfig<Route extends LayoutRoutes = LayoutRoutes> = {
   handler satisfies AppPageConfig<"/club-info/policies-procedures">
 }
 
+// Validate ../../app/club-news/page.tsx
+{
+  const handler = {} as typeof import("../../app/club-news/page.js")
+  handler satisfies AppPageConfig<"/club-news">
+}
+
+// Validate ../../app/club-news/posts/[slug]/page.tsx
+{
+  const handler = {} as typeof import("../../app/club-news/posts/[slug]/page.js")
+  handler satisfies AppPageConfig<"/club-news/posts/[slug]">
+}
+
 // Validate ../../app/page.tsx
 {
   const handler = {} as typeof import("../../app/page.js")
@@ -106,6 +118,12 @@ type LayoutConfig<Route extends LayoutRoutes = LayoutRoutes> = {
 {
   const handler = {} as typeof import("../../app/sailing/sailing-calendar-sis/page.js")
   handler satisfies AppPageConfig<"/sailing/sailing-calendar-sis">
+}
+
+// Validate ../../app/studio/[[...tool]]/page.tsx
+{
+  const handler = {} as typeof import("../../app/studio/[[...tool]]/page.js")
+  handler satisfies AppPageConfig<"/studio/[[...tool]]">
 }
 
 // Validate ../../app/training/page.tsx

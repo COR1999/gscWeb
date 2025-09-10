@@ -1,42 +1,39 @@
+import Link from "next/link";
+import { PortableText } from "@portabletext/react";
+import { urlFor } from "@/sanity/lib/client";
+import Image from "next/image";
+
 interface NewsCardProps {
   title: string;
   date: string;
-  excerpt: string;
-  slug?: string;
+  excerpt?: any;
+  slug: string;
+  mainImage?: { asset: { _ref: string } };
 }
 
-const NewsCard = ({ title, date, excerpt, slug }: NewsCardProps) => {
-  return (
-    <article className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden">
-      <div className="p-6">
-        <div className="flex items-center text-sm text-gray-500 mb-2">
-          <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-          </svg>
-          <time dateTime={date}>{new Date(date).toLocaleDateString('en-IE', { 
-            year: 'numeric', 
-            month: 'long', 
-            day: 'numeric' 
-          })}</time>
-        </div>
-        
-        <h3 className="text-xl font-semibold text-blue-900 mb-3 line-clamp-2">
-          {title}
-        </h3>
-        
-        <p className="text-gray-600 mb-4 line-clamp-3">
-          {excerpt}
-        </p>
-        
-        <button className="text-blue-600 hover:text-blue-800 font-medium transition-colors duration-200 flex items-center">
-          Read more
-          <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-          </svg>
-        </button>
-      </div>
-    </article>
-  );
-};
+const NewsCard = ({ title, date, excerpt, slug, mainImage }: NewsCardProps) => (
+  <div className="bg-white rounded-lg shadow hover:shadow-lg transition p-6 flex flex-col">
+    {mainImage?.asset?._ref && (
+      <Image
+        src={urlFor(mainImage).width(600).height(300).url()}
+        alt={title}
+        width={600} // required
+        height={300} // required
+        className="w-full h-48 object-cover rounded mb-4"
+      />
+    )}
+    <h3 className="text-xl font-semibold mb-2">{title}</h3>
+    <p className="text-gray-500 text-sm mb-2">{date}</p>
+    <div className="text-gray-600 mb-2 line-clamp-3">
+      {excerpt ? <PortableText value={excerpt} /> : "No excerpt available."}
+    </div>
+    <Link
+      href={`/club-news/posts/${slug}`}
+      className="mt-auto text-blue-600 hover:underline font-medium"
+    >
+      Read more
+    </Link>
+  </div>
+);
 
 export default NewsCard;

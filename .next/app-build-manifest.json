@@ -1,123 +1,20 @@
 {
   "pages": {
-    "/_not-found/page": [
-      "static/chunks/webpack-9d795f9e26b86992.js",
-      "static/chunks/4bd1b696-c023c6e3521b1417.js",
-      "static/chunks/255-e3bf15caf1f1e0f9.js",
-      "static/chunks/main-app-936a84a6a94ea384.js",
-      "static/chunks/app/_not-found/page-d24ca7ef7a645fbb.js"
-    ],
     "/layout": [
-      "static/chunks/webpack-9d795f9e26b86992.js",
-      "static/chunks/4bd1b696-c023c6e3521b1417.js",
-      "static/chunks/255-e3bf15caf1f1e0f9.js",
-      "static/chunks/main-app-936a84a6a94ea384.js",
-      "static/css/eceb28621dcd916b.css",
-      "static/chunks/app/layout-9cff6d66444d3fc3.js"
-    ],
-    "/calendar/page": [
-      "static/chunks/webpack-9d795f9e26b86992.js",
-      "static/chunks/4bd1b696-c023c6e3521b1417.js",
-      "static/chunks/255-e3bf15caf1f1e0f9.js",
-      "static/chunks/main-app-936a84a6a94ea384.js",
-      "static/chunks/481-26ca23480e4a333b.js",
-      "static/chunks/app/calendar/page-cab99bc3d842ba7a.js"
-    ],
-    "/club-info/club-commodores/page": [
-      "static/chunks/webpack-9d795f9e26b86992.js",
-      "static/chunks/4bd1b696-c023c6e3521b1417.js",
-      "static/chunks/255-e3bf15caf1f1e0f9.js",
-      "static/chunks/main-app-936a84a6a94ea384.js",
-      "static/chunks/481-26ca23480e4a333b.js",
-      "static/chunks/app/club-info/club-commodores/page-cab99bc3d842ba7a.js"
-    ],
-    "/club-info/club-officers/page": [
-      "static/chunks/webpack-9d795f9e26b86992.js",
-      "static/chunks/4bd1b696-c023c6e3521b1417.js",
-      "static/chunks/255-e3bf15caf1f1e0f9.js",
-      "static/chunks/main-app-936a84a6a94ea384.js",
-      "static/chunks/481-26ca23480e4a333b.js",
-      "static/chunks/app/club-info/club-officers/page-cab99bc3d842ba7a.js"
-    ],
-    "/club-info/constitution/page": [
-      "static/chunks/webpack-9d795f9e26b86992.js",
-      "static/chunks/4bd1b696-c023c6e3521b1417.js",
-      "static/chunks/255-e3bf15caf1f1e0f9.js",
-      "static/chunks/main-app-936a84a6a94ea384.js",
-      "static/chunks/481-26ca23480e4a333b.js",
-      "static/chunks/app/club-info/constitution/page-cab99bc3d842ba7a.js"
-    ],
-    "/club-info/history/page": [
-      "static/chunks/webpack-9d795f9e26b86992.js",
-      "static/chunks/4bd1b696-c023c6e3521b1417.js",
-      "static/chunks/255-e3bf15caf1f1e0f9.js",
-      "static/chunks/main-app-936a84a6a94ea384.js",
-      "static/chunks/481-26ca23480e4a333b.js",
-      "static/chunks/app/club-info/history/page-cab99bc3d842ba7a.js"
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/layout.css",
+      "static/chunks/app/layout.js"
     ],
     "/page": [
-      "static/chunks/webpack-9d795f9e26b86992.js",
-      "static/chunks/4bd1b696-c023c6e3521b1417.js",
-      "static/chunks/255-e3bf15caf1f1e0f9.js",
-      "static/chunks/main-app-936a84a6a94ea384.js",
-      "static/chunks/481-26ca23480e4a333b.js",
-      "static/chunks/app/page-36956a6004c0910d.js"
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/page.js"
     ],
-    "/club-info/membership/page": [
-      "static/chunks/webpack-9d795f9e26b86992.js",
-      "static/chunks/4bd1b696-c023c6e3521b1417.js",
-      "static/chunks/255-e3bf15caf1f1e0f9.js",
-      "static/chunks/main-app-936a84a6a94ea384.js",
-      "static/chunks/481-26ca23480e4a333b.js",
-      "static/chunks/app/club-info/membership/page-cab99bc3d842ba7a.js"
-    ],
-    "/club-info/policies-procedures/page": [
-      "static/chunks/webpack-9d795f9e26b86992.js",
-      "static/chunks/4bd1b696-c023c6e3521b1417.js",
-      "static/chunks/255-e3bf15caf1f1e0f9.js",
-      "static/chunks/main-app-936a84a6a94ea384.js",
-      "static/chunks/481-26ca23480e4a333b.js",
-      "static/chunks/app/club-info/policies-procedures/page-cab99bc3d842ba7a.js"
-    ],
-    "/sailing/junior-sailing/page": [
-      "static/chunks/webpack-9d795f9e26b86992.js",
-      "static/chunks/4bd1b696-c023c6e3521b1417.js",
-      "static/chunks/255-e3bf15caf1f1e0f9.js",
-      "static/chunks/main-app-936a84a6a94ea384.js",
-      "static/chunks/481-26ca23480e4a333b.js",
-      "static/chunks/app/sailing/junior-sailing/page-cab99bc3d842ba7a.js"
-    ],
-    "/sailing/live-feeds/page": [
-      "static/chunks/webpack-9d795f9e26b86992.js",
-      "static/chunks/4bd1b696-c023c6e3521b1417.js",
-      "static/chunks/255-e3bf15caf1f1e0f9.js",
-      "static/chunks/main-app-936a84a6a94ea384.js",
-      "static/chunks/481-26ca23480e4a333b.js",
-      "static/chunks/app/sailing/live-feeds/page-cab99bc3d842ba7a.js"
-    ],
-    "/sailing/results/page": [
-      "static/chunks/webpack-9d795f9e26b86992.js",
-      "static/chunks/4bd1b696-c023c6e3521b1417.js",
-      "static/chunks/255-e3bf15caf1f1e0f9.js",
-      "static/chunks/main-app-936a84a6a94ea384.js",
-      "static/chunks/481-26ca23480e4a333b.js",
-      "static/chunks/app/sailing/results/page-cab99bc3d842ba7a.js"
-    ],
-    "/sailing/sailing-calendar-sis/page": [
-      "static/chunks/webpack-9d795f9e26b86992.js",
-      "static/chunks/4bd1b696-c023c6e3521b1417.js",
-      "static/chunks/255-e3bf15caf1f1e0f9.js",
-      "static/chunks/main-app-936a84a6a94ea384.js",
-      "static/chunks/481-26ca23480e4a333b.js",
-      "static/chunks/app/sailing/sailing-calendar-sis/page-cab99bc3d842ba7a.js"
-    ],
-    "/training/page": [
-      "static/chunks/webpack-9d795f9e26b86992.js",
-      "static/chunks/4bd1b696-c023c6e3521b1417.js",
-      "static/chunks/255-e3bf15caf1f1e0f9.js",
-      "static/chunks/main-app-936a84a6a94ea384.js",
-      "static/chunks/481-26ca23480e4a333b.js",
-      "static/chunks/app/training/page-cab99bc3d842ba7a.js"
+    "/club-news/posts/[slug]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/club-news/posts/[slug]/page.js"
     ]
   }
 }

@@ -1,38 +1,31 @@
 import NewsCard from './NewsCard';
+import { client, urlFor } from '@/sanity/lib/client';
+import { PortableText } from '@portabletext/react';
 
-interface NewsItem {
-  id: number;
+type Post = {
+  _id: string;
   title: string;
-  date: string;
-  excerpt: string;
-  slug?: string;
-}
+  slug: { current: string };
+  excerpt?: any;
+  mainImage?: { asset: { _ref: string } };
+  publishedAt?: string;
+};
 
-const NewsSection = () => {
-  // Mock news data
-  const newsItems: NewsItem[] = [
-    {
-      id: 1,
-      title: "Annual Regatta 2024 - A Huge Success!",
-      date: "2024-08-15",
-      excerpt: "Our annual regatta drew over 150 participants from across Ireland and beyond. Perfect weather conditions and competitive racing made for an unforgettable weekend on the water. Congratulations to all winners and participants!",
-      slug: "annual-regatta-2024"
-    },
-    {
-      id: 2,
-      title: "New Youth Training Program Launches This September",
-      date: "2024-08-10",
-      excerpt: "We're excited to announce our expanded youth training program starting this September. Designed for ages 8-16, the program includes beginner courses, advanced racing skills, and safety training. Early bird registration is now open.",
-      slug: "youth-training-program-2024"
-    },
-    {
-      id: 3,
-      title: "Harbor Improvements Complete - New Facilities Now Open",
-      date: "2024-07-28",
-      excerpt: "After months of construction, our harbor improvements are complete! New changing facilities, expanded boat storage, and improved launching ramps are now available to all members. Come check out the fantastic new amenities.",
-      slug: "harbor-improvements-complete"
-    }
-  ];
+const fetchPosts = async (): Promise<Post[]> => {
+  return await client.fetch(
+    `*[_type == "post"]{
+      _id,
+      title,
+      slug,
+      excerpt,
+      mainImage{asset},
+      publishedAt
+    }`
+  );
+};
+
+const NewsSection = async () => {
+  const posts = await fetchPosts();
 
   return (
     <section className="py-16 bg-gray-50">
@@ -47,15 +40,20 @@ const NewsSection = () => {
         </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {newsItems.map((item) => (
-            <NewsCard
-              key={item.id}
-              title={item.title}
-              date={item.date}
-              excerpt={item.excerpt}
-              slug={item.slug}
-            />
-          ))}
+          {posts.length === 0 ? (
+            <div className="col-span-2 text-center text-gray-500">No posts found.</div>
+          ) : (
+            posts.map((post) => (
+              <NewsCard
+                key={post._id}
+                title={post.title}
+                date={post.publishedAt ? new Date(post.publishedAt).toLocaleDateString() : ""}
+                excerpt={post.excerpt}
+                slug={post.slug.current}
+                mainImage={post.mainImage}
+              />
+            ))
+          )}
         </div>
         
         <div className="text-center mt-12">

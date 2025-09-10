@@ -32,8 +32,8 @@ const Hero = () => {
           <Link href="/club-info/membership" className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-200 shadow-lg text-center">
             Join the Club
           </Link>
-          <Link href="/club-info/history" className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-50 transition-colors duration-200 shadow-lg border-2 border-blue-600 text-center">
-            Learn More
+          <Link href="/club-news" className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-50 transition-colors duration-200 shadow-lg border-2 border-blue-600 text-center">
+            Club News
           </Link>
         </div>
       </div>
